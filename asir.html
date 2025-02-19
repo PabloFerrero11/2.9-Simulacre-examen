@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IES El Grao</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function mostrarMensaje(input) {
+            if (input.value.trim() !== "") {
+                alert("Has introducido: " + input.value);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1><span class="resaltado">IES El Grao</span></h1>
+
+    <form class="left">
+        <label for="nombre" class="uno">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" onblur="mostrarMensaje(this)" required>
+
+        <label for="apellido" class="dos">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" onblur="mostrarMensaje(this)" required>
+
+        <label for="anio" class="tres">Año de nacimiento:</label>
+        <input type="number" id="anio" name="anio" required>
+
+        <div class="botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+    </div>
+    <hr>
+    <footer>
+        <p class="nombre2">Web desarrollada por <strong class="name">Pablo Ferrero Forcada</strong></p>
+    </footer>
+    <hr>
+</body>
+
+</html>
